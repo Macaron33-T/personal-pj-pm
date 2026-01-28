@@ -23,7 +23,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    if (loadedVideos >= 2) {
+    if (loadedVideos >= 4) {
       setIsLoading(false);
     }
   }, [loadedVideos]);
