@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
+import Button from "./Button";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -63,7 +64,7 @@ const Hero = () => {
             src={getVideosrc(
               currentIndex === totalVideos - 1 ? 1 : currentIndex,
             )}
-            autoPlay
+            //autoPlay
             loop
             muted
             className="absolute left-0 top-0 size-full object-cover object-center"
@@ -85,8 +86,10 @@ const Hero = () => {
                 </h1>
                 <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
                   GLORY TO PROJECT MOON!
-                  <p>PM fans can't read</p>
+                  <br />
+                  PM fans can't read why i need to write it here?
                 </p>
+                <Button />
               </div>
             </div>
           </div>
